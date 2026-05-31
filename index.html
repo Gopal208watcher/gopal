@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Premium motion design portfolio landing page."
+    />
+    <title>Portfolio | Motion Designer</title>
+    <link rel="preload" href="assets/images/background.jpeg" as="image" />
+    <link rel="preload" href="assets/images/background1.png" as="image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#hero-title">Skip to content</a>
+
+    <header class="site-header" aria-label="Site header">
+      <button
+        class="theme-toggle"
+        type="button"
+        aria-label="Switch to light mode"
+        aria-pressed="false"
+      >
+        <span class="theme-toggle-track" aria-hidden="true"></span>
+        <span class="theme-toggle-glow" aria-hidden="true"></span>
+        <span class="theme-toggle-frame" aria-hidden="true">
+          <span class="theme-icon theme-icon-moon"></span>
+          <span class="theme-icon theme-icon-sun"></span>
+        </span>
+      </button>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Open navigation"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav
+        class="site-nav"
+        id="primary-navigation"
+        aria-label="Primary navigation"
+      >
+        <span class="nav-indicator" aria-hidden="true"></span>
+        <ul class="nav-list">
+          <li><a href="#home" aria-current="page">home</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#work">work</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-scroll" id="home" aria-labelledby="hero-title">
+        <div class="hero" data-hero>
+          <div class="hero-background" aria-hidden="true">
+            <div class="hero-image hero-image-dark"></div>
+            <div class="hero-image hero-image-light"></div>
+          </div>
+          <div class="hero-overlay" aria-hidden="true"></div>
+          <div class="moon-glow" aria-hidden="true"></div>
+
+          <div class="hero-content">
+            <h1 class="hero-title" id="hero-title">
+              <span class="hero-title-line hero-title-primary">
+                <span class="hero-word hero-word-motion" style="--word-index: 0">Motion</span>
+                <span class="hero-title-support">
+                  <span class="hero-word" style="--word-index: 1">is</span>
+                  <span class="hero-word" style="--word-index: 2">more</span>
+                  <span class="hero-word" style="--word-index: 3">than</span>
+                  <span class="hero-word" style="--word-index: 4">animation</span>
+                </span>
+              </span>
+              <span class="hero-title-line hero-title-secondary">
+                <span class="hero-word hero-title-small" style="--word-index: 5">it's</span>
+                <em class="hero-word hero-word-communication" style="--word-index: 6">Communication</em>
+              </span>
+            </h1>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills-section cinematic-section" id="skills" aria-labelledby="skills-title">
+        <div class="skills-atmosphere" aria-hidden="true"></div>
+        <div class="section-shell skills-shell">
+          <div class="skills-intro">
+            <div class="skills-intro-panel">
+              <span class="corner-tr" aria-hidden="true"></span>
+              <span class="corner-bl" aria-hidden="true"></span>
+              <p class="section-eyebrow">MY EXPERTISE</p>
+              <h2 class="section-title" id="skills-title">SKILLS</h2>
+            </div>
+            <p class="skills-description">
+              A collection of tools and creative disciplines I use to bring ideas to life through motion, storytelling and design.
+            </p>
+          </div>
+
+          <div class="skill-tree-container">
+            <svg class="skill-connections" aria-hidden="true">
+              <defs>
+                <linearGradient id="connectionGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="rgba(130, 160, 255, 0.15)" />
+                  <stop offset="50%" stop-color="rgba(130, 160, 255, 0.5)" />
+                  <stop offset="100%" stop-color="rgba(130, 160, 255, 0.15)" />
+                </linearGradient>
+                <linearGradient id="connectionGradientLight" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="rgba(7, 17, 29, 0.12)" />
+                  <stop offset="50%" stop-color="rgba(7, 17, 29, 0.4)" />
+                  <stop offset="100%" stop-color="rgba(7, 17, 29, 0.12)" />
+                </linearGradient>
+              </defs>
+              <g class="connection-lines"></g>
+            </svg>
+
+            <div class="skill-tree" role="group" aria-label="Skill network">
+              <!-- Video Editing - Top Left -->
+              <div class="skill-node skill-node-branch" data-node="video-editing" data-position="top-left">
+                <div class="skill-node-inner">
+                  <span class="skill-node-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <rect x="2" y="4" width="20" height="16" rx="2" />
+                      <path d="M10 9l5 3-5 3V9z" />
+                    </svg>
+                  </span>
+                  <span class="skill-node-label">Video<br />Editing</span>
+                </div>
+              </div>
+
+              <!-- After Effects - Top Right -->
+              <div class="skill-node skill-node-branch" data-node="after-effects" data-position="top-right">
+                <div class="skill-node-inner">
+                  <span class="skill-node-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <rect x="3" y="3" width="18" height="18" rx="2" />
+                      <path d="M8 8h2v8H8V8z" />
+                      <path d="M14 8h2v8h-2V8z" />
+                    </svg>
+                  </span>
+                  <span class="skill-node-label">After<br />Effects</span>
+                </div>
+              </div>
+
+              <!-- Center Node - Creative Workflow (Core) -->
+              <div class="skill-node skill-node-center" data-node="center">
+                <div class="skill-node-inner">
+                  <span class="skill-node-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                      <path d="M2 17l10 5 10-5" />
+                      <path d="M2 12l10 5 10-5" />
+                    </svg>
+                  </span>
+                  <span class="skill-node-label">Creative<br />Workflow</span>
+                </div>
+                <div class="skill-node-glow" aria-hidden="true"></div>
+                <div class="skill-node-ring" aria-hidden="true"></div>
+              </div>
+
+              <!-- Motion Graphics - Left -->
+              <div class="skill-node skill-node-branch" data-node="motion-graphics" data-position="left">
+                <div class="skill-node-inner">
+                  <span class="skill-node-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <circle cx="12" cy="12" r="9" />
+                      <path d="M12 3v18" />
+                      <path d="M3 12h18" />
+                      <circle cx="12" cy="12" r="3" />
+                    </svg>
+                  </span>
+                  <span class="skill-node-label">Motion<br />Graphics</span>
+                </div>
+              </div>
+
+              <!-- UI / Visual Design - Right -->
+              <div class="skill-node skill-node-branch" data-node="ui-design" data-position="right">
+                <div class="skill-node-inner">
+                  <span class="skill-node-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <rect x="3" y="3" width="18" height="18" rx="2" />
+                      <path d="M3 9h18" />
+                      <path d="M9 21V9" />
+                    </svg>
+                  </span>
+                  <span class="skill-node-label">UI / Visual<br />Design</span>
+                </div>
+              </div>
+
+              <!-- Figma - Bottom Left -->
+              <div class="skill-node skill-node-branch" data-node="figma" data-position="bottom-left">
+                <div class="skill-node-inner">
+                  <span class="skill-node-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <path d="M5 3h6a3 3 0 010 6H8a3 3 0 000 6h3a3 3 0 010 6H5" />
+                      <path d="M11 3h3a3 3 0 013 3v3a3 3 0 01-3 3h0" />
+                      <path d="M14 12h3a3 3 0 013 3v3a3 3 0 01-3 3h-3" />
+                    </svg>
+                  </span>
+                  <span class="skill-node-label">Figma</span>
+                </div>
+              </div>
+
+              <!-- Creative Direction - Bottom Right -->
+              <div class="skill-node skill-node-branch" data-node="creative-direction" data-position="bottom-right">
+                <div class="skill-node-inner">
+                  <span class="skill-node-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z" />
+                    </svg>
+                  </span>
+                  <span class="skill-node-label">Creative<br />Direction</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills-tagline">
+              <span class="tagline-capsule">Crafting stories through motion, design and experimentation.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="work-universe cinematic-section" id="work" aria-labelledby="work-title" data-universe>
+        <div class="universe-atmosphere" aria-hidden="true"></div>
+        <div class="work-heading">
+          <p class="section-eyebrow">selected work</p>
+          <h2 class="work-title" id="work-title">Motion &bull; Design &bull; Editing</h2>
+          <p class="work-copy">
+            Built through curiosity. Refined through experimentation.
+          </p>
+        </div>
+
+        <div class="showcase-marquee" aria-label="Featured project videos">
+          <div class="marquee-row marquee-row-top" data-marquee-row="left">
+            <div class="marquee-track">
+              <article class="showcase-project" data-title="Solar Edit" data-category="Motion Design" data-description="A motion-led editorial piece shaped around rhythm, contrast and atmospheric pacing.">
+                <button class="project-trigger" type="button">
+                  <span class="device-shell">
+                    <span class="device-screen">
+                      <video src="assets/videos/v1.mp4" muted loop playsinline preload="metadata"></video>
+                    </span>
+                  </span>
+                  <span class="project-meta">
+                    <strong>Solar Edit</strong>
+                    <span>Motion Design</span>
+                  </span>
+                </button>
+              </article>
+
+              <article class="showcase-project" data-title="Moonlight" data-category="Video Editing" data-description="A cinematic edit exploring silence, timing and mood through moonlit visual language.">
+                <button class="project-trigger" type="button">
+                  <span class="device-shell">
+                    <span class="device-screen">
+                      <video src="assets/videos/v2.mp4" muted loop playsinline preload="metadata"></video>
+                    </span>
+                  </span>
+                  <span class="project-meta">
+                    <strong>Moonlight</strong>
+                    <span>Video Editing</span>
+                  </span>
+                </button>
+              </article>
+
+              <article class="showcase-project" data-title="Frame Shift" data-category="Showreel" data-description="A compact showreel system designed for high-impact transitions and editorial momentum.">
+                <button class="project-trigger" type="button">
+                  <span class="device-shell">
+                    <span class="device-screen">
+                      <video src="assets/videos/v3.mp4" muted loop playsinline preload="metadata"></video>
+                    </span>
+                  </span>
+                  <span class="project-meta">
+                    <strong>Frame Shift</strong>
+                    <span>Showreel</span>
+                  </span>
+                </button>
+              </article>
+
+              <article class="showcase-project" data-title="Reel Frame" data-category="Social Motion" data-description="A vertical-first motion study built for short-form energy and clean visual hierarchy.">
+                <button class="project-trigger" type="button">
+                  <span class="device-shell">
+                    <span class="device-screen">
+                      <video src="assets/videos/v4.mp4" muted loop playsinline preload="metadata"></video>
+                    </span>
+                  </span>
+                  <span class="project-meta">
+                    <strong>Reel Frame</strong>
+                    <span>Social Motion</span>
+                  </span>
+                </button>
+              </article>
+            </div>
+          </div>
+
+          <div class="marquee-row marquee-row-bottom" data-marquee-row="right">
+            <div class="marquee-track">
+              <article class="showcase-project" data-title="Signal Cut" data-category="Editing Study" data-description="A visual timing experiment that uses contrast and pacing to guide attention.">
+                <button class="project-trigger" type="button">
+                  <span class="device-shell">
+                    <span class="device-screen">
+                      <video src="assets/videos/v5.mp4" muted loop playsinline preload="metadata"></video>
+                    </span>
+                  </span>
+                  <span class="project-meta">
+                    <strong>Signal Cut</strong>
+                    <span>Editing Study</span>
+                  </span>
+                </button>
+              </article>
+
+              <article class="showcase-project" data-title="Atmos Film" data-category="Campaign Motion" data-description="A campaign-style motion piece focused on atmosphere, depth and compositional restraint.">
+                <button class="project-trigger" type="button">
+                  <span class="device-shell">
+                    <span class="device-screen">
+                      <video src="assets/videos/v6.mp4" muted loop playsinline preload="metadata"></video>
+                    </span>
+                  </span>
+                  <span class="project-meta">
+                    <strong>Atmos Film</strong>
+                    <span>Campaign Motion</span>
+                  </span>
+                </button>
+              </article>
+
+              <article class="showcase-project" data-title="Kinetic Type" data-category="Typography Motion" data-description="A type-led sequence exploring weight, rhythm and restrained motion language.">
+                <button class="project-trigger" type="button">
+                  <span class="device-shell">
+                    <span class="device-screen">
+                      <video src="assets/videos/v7.mp4" muted loop playsinline preload="metadata"></video>
+                    </span>
+                  </span>
+                  <span class="project-meta">
+                    <strong>Kinetic Type</strong>
+                    <span>Typography Motion</span>
+                  </span>
+                </button>
+              </article>
+
+              <article class="showcase-project" data-title="Pulse System" data-category="Visual Direction" data-description="A systems-oriented motion exploration with a polished visual direction foundation.">
+                <button class="project-trigger" type="button">
+                  <span class="device-shell">
+                    <span class="device-screen">
+                      <video src="assets/videos/v8.mp4" muted loop playsinline preload="metadata"></video>
+                    </span>
+                  </span>
+                  <span class="project-meta">
+                    <strong>Pulse System</strong>
+                    <span>Visual Direction</span>
+                  </span>
+                </button>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="project-modal" data-project-modal aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-backdrop" type="button" data-modal-close aria-label="Close project preview"></button>
+        <div class="modal-panel" role="document">
+          <button class="modal-close" type="button" data-modal-close aria-label="Close project preview">close</button>
+          <div class="modal-media">
+            <video class="modal-video" muted loop playsinline></video>
+          </div>
+          <div class="modal-copy">
+            <p class="section-eyebrow modal-category">Motion Design</p>
+            <h2 class="modal-title" id="modal-title">Project Title</h2>
+            <p class="modal-description">Project description.</p>
+          </div>
+        </div>
+      </div>
+
+<section class="about-section cinematic-section" id="about" aria-labelledby="about-title">
+         <div class="about-atmosphere" aria-hidden="true"></div>
+         <div class="section-shell about-shell">
+           <div class="about-grid">
+             <!-- Left Column -->
+             <div class="about-left">
+               <div class="about-intro">
+                 <p class="section-eyebrow about-label">ABOUT ME</p>
+                 <h2 class="about-heading" id="about-title">
+                   <span class="about-heading-text">ABOUT</span>
+                   <span class="about-heading-accent">ME</span>
+                 </h2>
+                 <div class="about-description">
+                   <p>I'm a motion designer and creative director passionate about crafting digital experiences that blend storytelling, visual design, and seamless animation. Each project pushes creative boundaries to create work that resonates and communicates with clarity.</p>
+                   <p>My approach combines technical precision with artistic intuition, resulting in exceptional work that tells compelling stories through motion.</p>
+                 </div>
+               </div>
+
+<!-- Stats Cards -->
+               <div class="about-stats">
+                 <div class="stat-card" data-stat="experience">
+                   <div class="stat-card-inner">
+                     <span class="stat-value">4+</span>
+                     <span class="stat-label">Years Experience</span>
+                   </div>
+                 </div>
+                 <div class="stat-card" data-stat="projects">
+                   <div class="stat-card-inner">
+                     <span class="stat-value">80+</span>
+                     <span class="stat-label">Projects Completed</span>
+                   </div>
+                 </div>
+                 <div class="stat-card" data-stat="clients">
+                   <div class="stat-card-inner">
+                     <span class="stat-value">30+</span>
+                     <span class="stat-label">Happy Clients</span>
+                   </div>
+                 </div>
+                 <div class="stat-card" data-stat="industries">
+                   <div class="stat-card-inner">
+                     <span class="stat-value">10+</span>
+                     <span class="stat-label">Industries Worked With</span>
+                   </div>
+                 </div>
+               </div>
+
+              <!-- Quote -->
+              <div class="about-quote">
+                <span class="quote-mark" aria-hidden="true">"</span>
+                <p>Design is not just what it looks like and feels like. Design is how it works.</p>
+                <span class="quote-author">— Steve Jobs</span>
+              </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="about-right">
+              <!-- Portrait Frame -->
+              <div class="portrait-frame">
+                <div class="portrait-border">
+                  <div class="portrait-corner portrait-corner-tl" aria-hidden="true"></div>
+                  <div class="portrait-corner portrait-corner-tr" aria-hidden="true"></div>
+                  <div class="portrait-corner portrait-corner-bl" aria-hidden="true"></div>
+                  <div class="portrait-corner portrait-corner-br" aria-hidden="true"></div>
+                  <div class="portrait-image">
+                    <img src="assets/images/background.jpeg" alt="Portrait" loading="lazy" />
+                  </div>
+                </div>
+                <div class="portrait-glow" aria-hidden="true"></div>
+              </div>
+
+<!-- What I Do Section -->
+               <div class="services-section">
+                 <h3 class="services-title">WHAT I DO</h3>
+                 <div class="services-divider"></div>
+                 <ul class="services-list">
+                   <li class="service-item">
+                     <span class="service-icon" aria-hidden="true">
+                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                         <rect x="2" y="4" width="20" height="16" rx="2" />
+                         <path d="M10 9l5 3-5 3V9z" />
+                       </svg>
+                     </span>
+                     <div class="service-content">
+                       <h4 class="service-title">Video Editing</h4>
+                       <p class="service-desc">Crafting compelling narratives through precise cuts, pacing, and visual rhythm.</p>
+                     </div>
+                   </li>
+                   <li class="service-item">
+                     <span class="service-icon" aria-hidden="true">
+                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                         <circle cx="12" cy="12" r="9" />
+                         <path d="M12 3v18" />
+                         <path d="M3 12h18" />
+                       </svg>
+                     </span>
+                     <div class="service-content">
+                       <h4 class="service-title">Motion Graphics</h4>
+                       <p class="service-desc">Bringing static designs to life with fluid animation and dynamic movement.</p>
+                     </div>
+                   </li>
+                   <li class="service-item">
+                     <span class="service-icon" aria-hidden="true">
+                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                         <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z" />
+                       </svg>
+                     </span>
+                     <div class="service-content">
+                       <h4 class="service-title">Visual Design</h4>
+                       <p class="service-desc">Creating beautiful and functional visual solutions for digital experiences.</p>
+                     </div>
+                   </li>
+                   <li class="service-item">
+                     <span class="service-icon" aria-hidden="true">
+                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                         <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                       </svg>
+                     </span>
+                     <div class="service-content">
+                       <h4 class="service-title">Visual Storytelling</h4>
+                       <p class="service-desc">Weaving narratives through visual elements to create compelling stories.</p>
+                     </div>
+                   </li>
+                 </ul>
+               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section cinematic-section" id="contact" aria-labelledby="contact-title">
+        <div class="section-shell section-shell-narrow">
+          <p class="section-eyebrow">contact</p>
+          <h2 class="section-title" id="contact-title">Let us build something with atmosphere.</h2>
+          <a class="contact-link" href="mailto:hello@example.com">hello@example.com</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
